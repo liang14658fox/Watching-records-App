@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>菜鸟教程</title>
+    <script type="text/javascript">
+
+    </script>
+    <style type="text/css">
+.flex_container {
+	display: flex;
+	background-color: #f1f1f1;
+	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex_container>div {
+	background-color: DodgerBlue;
+	color: white;
+	/* width: 200px; */ /* 不需要 */
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	cursor: pointer;
+	flex: 1;
+	min-width: 200px;
+}
+
+.empty_card {
+	height: 0;
+	margin-top: 0; 	/* 宽度和高度都设置为0，不占用空间 */
+	margin-right: 18px; /* 不可以忘记margin，否则有可能对不齐 */
+}
+    </style>
+</head>
+
+<body>
+    <div>
+<div class="flex_container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <!-- 添加空元素，防止最后一行元素拉伸 -->
+    <div class="empty_card"></div>
+    <div class="empty_card"></div>
+    <div class="empty_card"></div>
+    <div class="empty_card"></div>
+    <div class="empty_card"></div>
+    <div class="empty_card"></div>
+    <div class="empty_card"></div>
+    <div class="empty_card"></div>
+</div>
+    </div>
+</body>
+
+</html>
